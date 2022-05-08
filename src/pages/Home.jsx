@@ -1,8 +1,13 @@
 import React from 'react'
+import Announcement from '../components/Announcement'
+import Navbar from '../components/Navbar'
 
 function Home() {
   return (
-    <div>hello from home</div>
+    <>
+      <Announcement/>
+      <Navbar/>
+    </>
   )
 }
 
