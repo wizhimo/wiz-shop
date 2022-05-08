@@ -1,15 +1,9 @@
-import styled from 'styled-components'
+import Home from "./pages/Home";
 
-const Title = styled.h1`
-  font-size: 50px;
-
-`
 
 function App() {
   return (
-    <Title>
-      hello world!
-    </Title>
+    <Home/>
   );
 }
 
