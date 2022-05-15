@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Pinterest, Twitter } from '@mui/icons-material'
+import { EmailOutlined, Facebook, Instagram, LocalPhone, LocationOn, Pinterest, Twitter } from '@mui/icons-material'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -12,7 +12,9 @@ const Left = styled.div`
     padding: 20px;
 `
 
-const Logo = styled.h1``
+const Logo = styled.h1`
+    font-size: 30px;
+`
 
 const Desc = styled.p`
     margin: 20px 0px;
@@ -66,6 +68,21 @@ const Right = styled.div`
     padding: 20px;
 `
 
+const Info = styled.div`
+    margin: 20px 0px;
+   
+`
+const ContactItem = styled.div`
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+`
+
+const Payment = styled.img`
+    width: 50%;
+`
+
+
 function Footer() {
   return (
     <Container>
@@ -106,7 +123,21 @@ function Footer() {
                 <Link>Terms</Link>
             </Links>
         </Center>
-        <Right>right</Right>
+        <Right>
+            <Title>Contact</Title>
+            <Info>
+                <ContactItem>
+                    <LocationOn style={{marginRight:"5px"}}/> 622 Dixie Path, South Tobinchester 998632
+                </ContactItem>
+                <ContactItem>
+                    <LocalPhone style={{marginRight:"5px"}}/> +1 234 56 78
+                </ContactItem>
+                <ContactItem>
+                    <EmailOutlined style={{marginRight:"5px"}}/> contact@wizshop.ca
+                </ContactItem>
+                <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
+            </Info>
+        </Right>
     </Container>
   )
 }
