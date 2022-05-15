@@ -4,7 +4,7 @@ import React from 'react'
 
 const Container = styled.div`
   flex: 1;
-  height: 80vh;
+  height: 70vh;
   margin: 3px;
   position: relative;
 `
@@ -35,6 +35,7 @@ const Title = styled.h1`
     letter-spacing: 2px;
     font-size: 30px;
     margin-bottom: 20px;
+    text-align: center;
 `
 
 const Button = styled.button`
