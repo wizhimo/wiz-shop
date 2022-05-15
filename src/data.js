@@ -19,4 +19,23 @@ export const sliderItems = [{
         desc: 'DON\'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.',
         bc: '#e9e1e7'
     }
+
+]
+
+export const categoryItems = [{
+        id: 1,
+        img: "https://images.unsplash.com/photo-1503342394128-c104d54dba01?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        title: "T-SHIRT STYLE "
+
+    },
+    {
+        id: 2,
+        img: "https://images.unsplash.com/photo-1485811661309-ab85183a729c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+        title: "JACKET STYLE"
+    },
+    {
+        id: 3,
+        img: "https://images.unsplash.com/photo-1601762603339-fd61e28b698a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        title: "LOUNGEWEAR STYLE"
+    }
 ]
