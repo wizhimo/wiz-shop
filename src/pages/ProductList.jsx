@@ -14,6 +14,7 @@ const Container = styled.div`
 
 const Title = styled.h1`
     margin-bottom: 30px;
+    ${mobile({marginBottom: '10px'})}
 `
 
 const FilterContainer = styled.div`
