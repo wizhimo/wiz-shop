@@ -5,9 +5,11 @@ import Navbar from '../components/Navbar'
 import NewsLetter from '../components/NewsLetter'
 import Products from '../components/Products'
 import styled from 'styled-components'
+import {mobile} from '../responsive'
 
 const Container = styled.div`
     padding: 20px;
+    ${mobile({padding: '10px'})};
 `
 
 const Title = styled.h1`
@@ -23,10 +25,13 @@ const FilterContainer = styled.div`
 const Options = styled.select`
     margin-left: 10px;
     padding: 5px;
+    ${mobile({margin: '10px 0px 0px 0px'})};
 `
 const Option = styled.option``
 
-const Filter = styled.div``
+const Filter = styled.div`
+    ${mobile({display: 'flex', flexDirection: 'column'})};
+`
 
 const FilterText = styled.span`
     font-size: 18px;

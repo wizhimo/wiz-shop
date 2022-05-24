@@ -1,6 +1,7 @@
 import { Send } from '@mui/icons-material'
 import React from 'react'
 import styled from 'styled-components'
+import {mobile} from '../responsive'
 
 const Container = styled.div`
     width: 100%;
@@ -14,11 +15,13 @@ const Container = styled.div`
 
 const Title = styled.h1`
     font-size: 70px;
+    ${mobile({fontSize :'50px'})}
 `
 
 const Desc = styled.p`
     font-size: 24px;
     margin: 20px 0px;
+    ${mobile({textAlign :'center', margin: '30px 0px'})}
 `
 
 const SearchContainer = styled.div`
@@ -26,6 +29,7 @@ const SearchContainer = styled.div`
     height: 40px;
     border: 1px solid lightgray;
     display: flex;
+    ${mobile({width :'80%'})}
 `
 
 const Input = styled.input`

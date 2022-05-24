@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Announcement from '../components/Announcement'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import {mobile} from '../responsive'
 
 const Container = styled.div``
 
@@ -32,7 +33,7 @@ const TopButton = styled.button`
 `
 
 const TopTexts = styled.div`
-    
+    ${mobile({display :'none'})}
 `
 
 const TopText = styled.a`
@@ -43,6 +44,7 @@ const TopText = styled.a`
 
 const Bottom = styled.div`
     display: flex;
+    ${mobile({flexDirection :'column'})}
 `
 
 const ProductContainer =styled.div`
@@ -55,11 +57,12 @@ const ProductContainer =styled.div`
 const Product = styled.div`
     display: flex;
     margin: 30px 0px;
+    ${mobile({flexDirection :'column'})}
 `
 
 const Image = styled.img`
     width: 250px;
-    
+    ${mobile({width :'100%'})}
 `
 
 const ProductDetails = styled.div`
@@ -68,20 +71,29 @@ const ProductDetails = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    ${mobile({padding :'0px', justifyContent:'space-between'})}
 `
 
-const ProductName = styled.span``
+const ProductName = styled.span`
+    ${mobile({margin: '10px 0px'})}
+`
 
-const ProductId = styled.span``
+const ProductId = styled.span`
+    ${mobile({margin: '10px 0px'})}
+`
 
 const Color = styled.div`
     width: 25px;
     height: 25px;
     border-radius: 50%;
     background-color: ${props => props.color};
+    ${mobile({margin: '10px 0px'})}
+
 `
 
-const ProductSize = styled.span``
+const ProductSize = styled.span`
+    ${mobile({margin: '10px 0px'})}
+`
 
 const PriceDetails = styled.div`
     flex: 1;
@@ -101,6 +113,7 @@ const Amount = styled.span`
     font-size: 20px;
     margin: 0px 5px;
     font-weight: 500;
+    ${mobile({margin:'0px 10px', fontSize:'24px'})};
 `
 
 const Price = styled.span`
@@ -124,6 +137,7 @@ const Summary = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    ${mobile({flex: 'none'})}
 
 `
 const SummaryTitle = styled.h1`

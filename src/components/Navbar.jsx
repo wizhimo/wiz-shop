@@ -2,13 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import SearchIcon from '@mui/icons-material/Search';
 import MyBadge from '../components/MyBadge'
-
+import {mobile} from '../responsive'
 
 const Container = styled.div`
     height: 60px;
     padding: 20px;
     display: flex;
     align-items: center;
+    ${mobile({height:"50px", padding: "0px 5px"})};
 `
 const Left = styled.div`
     flex: 1;
@@ -21,6 +22,7 @@ const Language = styled.span`
     font-size: 16px;
     margin-right: 10px;
     cursor: pointer;
+    ${mobile({display:'none'})};
 `
 
 const SearchContainer = styled.div`
@@ -28,11 +30,13 @@ const SearchContainer = styled.div`
     display: flex;
     align-items: center;
     padding: 5px;
+    
 `
 
 const Input = styled.input`
     border: none;
     outline: none;
+    ${mobile({width: '80px'})};
 `
 
 const Center = styled.div`
@@ -44,6 +48,7 @@ const Logo = styled.h1`
     font-size: 30px;
     font-weight: 700;
     text-align: center;
+    ${mobile({fontSize: '24px', marginLeft:'10px'})};
 `
 
 const Right = styled.div`
@@ -51,12 +56,14 @@ const Right = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    ${mobile({justifyContent: 'center', flex:'2'})};
 `
 
 const MenuItem = styled.div`
     margin-left: 25px;
     cursor: pointer;
     font-size: 14px;
+    ${mobile({fontSize: '12px', marginLeft: '10px',fontWeight: '500'})};
 `
 
 function Navbar() {
@@ -65,7 +72,7 @@ function Navbar() {
         <Left>
             <Language>EN</Language>
             <SearchContainer>
-                <Input/>
+                <Input placeholder='Search'/>
                 <SearchIcon style={{fontSize:"16px", cursor: "pointer"}}/>
             </SearchContainer>
         </Left>

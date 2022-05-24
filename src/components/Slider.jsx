@@ -3,6 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {sliderItems} from '../data'
 import { useState } from 'react'
+import {mobile} from '../responsive'
 
 const Container = styled.div`
     width: 100%;
@@ -29,12 +30,14 @@ const Slide = styled.div`
 
 const ImageContainer = styled.div`
     flex: 1;
+    ${mobile({display:'none'})};
 `
 
 const Image = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    ${mobile({display:'none'})};
 `
 
 const InfoContainer = styled.div`

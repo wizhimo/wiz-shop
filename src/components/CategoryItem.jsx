@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import React from 'react'
+import {mobile} from '../responsive'
 
 
 const Container = styled.div`
@@ -7,6 +8,7 @@ const Container = styled.div`
   height: 70vh;
   margin: 3px;
   position: relative;
+  ${mobile({height:'50vh', flex:'none'})};
 `
 
 const Image = styled.img`
